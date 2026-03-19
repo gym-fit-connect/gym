@@ -191,6 +191,10 @@ section{padding:90px 36px}
 .trainer-photo-wrap{position:relative}
 .trainer-photo{width:100%;height:500px;object-fit:cover;object-position:top;border:1px solid var(--border)}
 .trainer-badge{position:absolute;bottom:-1px;left:0;right:0;background:var(--green);padding:18px 22px;border-top:3px solid var(--green3)}
+.t-stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);margin-bottom:16px}
+.t-stat{background:var(--dark);padding:16px 10px;text-align:center;border:1px solid var(--border)}
+.t-stat-n{font-family:var(--font-d);font-size:38px;color:var(--green3);line-height:1}
+.t-stat-l{font-family:var(--font-h);font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-top:3px}
 .tb-name{font-family:var(--font-d);font-size:32px;letter-spacing:2px;color:#fff;line-height:1}
 .tb-role{font-family:var(--font-h);font-size:10px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.7);margin-top:3px}
 .trainer-info{display:flex;flex-direction:column;gap:16px}
@@ -304,8 +308,8 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:50px 36
 
 <!-- FLOATING ACTION BUTTONS -->
 <div class="float-btns">
-  <a href="https://wa.me/918089400009?text=Hi%20Anshuman!%20I%20want%20to%20join%20FIT%20CONNECT%20Gym%20Nadaun" target="_blank" class="float-btn float-wa" title="WhatsApp Anuj">💬</a>
-  <a href="tel:+918089400009" class="float-btn float-call" title="Call Anuj Thakur">📞</a>
+  <a href="https://wa.me/918089400009?text=Hi%20Anshuman!%20I%20want%20to%20join%20FIT%20CONNECT%20Gym%20Nadaun" target="_blank" class="float-btn float-wa" title="WhatsApp Anshuman">💬</a>
+  <a href="tel:+918089400009" class="float-btn float-call" title="Call Anshuman">📞</a>
 </div>
 
 <!-- NAV -->
@@ -822,9 +826,10 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:50px 36
 <section id="trainer">
   <div class="sec-inner">
     <div class="reveal">
-      <div class="sec-kicker">Meet Your Coach</div>
-      <h2 class="sec-title">TRAINER<br>ANUJ THAKUR</h2>
+      <div class="sec-kicker">⭐ Meet Your Expert Coach</div>
+      <h2 class="sec-title">TRAINER<br><span style="color:var(--green3)">ANUJ THAKUR</span></h2>
       <div class="bar"></div>
+      <p style="font-size:15px;color:#8a9a8a;max-width:580px;line-height:1.8;margin-bottom:0">Your certified fitness expert at FIT CONNECT Gym, Nadaun — guiding hundreds of members to their dream physiques.</p>
     </div>
     <div class="trainer-hero reveal">
       <div class="trainer-photo-wrap">
@@ -877,8 +882,8 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:50px 36
       <div class="plan-card">
         <div class="plan-name">STARTER</div>
         <div class="plan-dur">Monthly Plan</div>
-        <div class="plan-price"><sup>₹</sup>999<span style="font-size:20px;color:var(--muted)">/mo</span></div>
-        <div class="plan-note">Perfect for beginners getting started</div>
+        <div class="plan-price" style="font-size:40px;line-height:1"><sup>₹</sup>1000<span style="font-size:18px;color:var(--green3)"> – </span><sup>₹</sup>1500</div>
+        <div class="plan-note">Per month · Based on batch & timing</div>
         <ul class="plan-perks">
           <li>Full Gym Access 6AM–10PM</li>
           <li>All Equipment Included</li>
@@ -892,8 +897,8 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:50px 36
         <div class="plan-badge">BEST VALUE</div>
         <div class="plan-name">WARRIOR</div>
         <div class="plan-dur">3-Month Plan</div>
-        <div class="plan-price"><sup>₹</sup>2499<span style="font-size:18px;color:var(--muted)">/3mo</span></div>
-        <div class="plan-note">Serious results, serious savings</div>
+        <div class="plan-price" style="font-size:40px;line-height:1"><sup>₹</sup>3000<span style="font-size:18px;color:var(--green3)"> – </span><sup>₹</sup>4500</div>
+        <div class="plan-note">3 months · Save more, transform faster</div>
         <ul class="plan-perks">
           <li>Everything in Starter</li>
           <li>Personalised Workout Plan</li>
@@ -907,7 +912,7 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:50px 36
       <div class="plan-card">
         <div class="plan-name">CHAMPION</div>
         <div class="plan-dur">Annual Plan</div>
-        <div class="plan-price"><sup>₹</sup>7999<span style="font-size:18px;color:var(--muted)">/yr</span></div>
+        <div class="plan-price" style="font-size:52px;line-height:1"><sup>₹</sup>12000<span style="font-size:16px;color:var(--muted)">/yr</span></div>
         <div class="plan-note">Full year — maximum transformation</div>
         <ul class="plan-perks">
           <li>Everything in Warrior</li>
@@ -921,7 +926,18 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:50px 36
         <a href="https://wa.me/918089400009?text=Hi%20Anshuman!%20I%20want%20to%20know%20about%20the%20Annual%20Champion%20plan%20at%20FIT%20CONNECT" target="_blank" class="btn btn-green" style="width:100%;justify-content:center">Enquire on WhatsApp</a>
       </div>
     </div>
-    <div style="text-align:center;margin-top:24px;color:var(--muted);font-size:13px">💬 WhatsApp Anuj for student discounts, couple plans & special offers · <a href="tel:+918089400009" style="color:var(--green3)">08089400009</a></div>
+    <!-- OFFERS BANNER -->
+    <div style="background:linear-gradient(135deg,rgba(30,107,46,.18),rgba(58,173,81,.1));border:1px solid rgba(58,173,81,.5);border-left:4px solid var(--green3);padding:20px 24px;margin-top:28px;display:flex;align-items:center;gap:16px;flex-wrap:wrap">
+      <div style="font-size:30px">🎁</div>
+      <div style="flex:1;min-width:200px">
+        <div style="font-family:var(--font-d);font-size:20px;letter-spacing:2px;color:var(--green3)">SPECIAL OFFERS &amp; DISCOUNTS AVAILABLE</div>
+        <div style="font-size:13px;color:#c8e6c9;margin-top:4px;line-height:1.7">Student discounts · Couple plans · Seasonal offers · Group packages. Contact <strong style="color:#ffe066">Anshuman Thakur</strong> or <strong style="color:#ffe066">Anuj Thakur</strong> directly for exclusive deals!</div>
+      </div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap">
+        <a href="tel:+918089400009" class="btn btn-call" style="font-size:11px;padding:9px 16px">📞 Call Anshuman</a>
+        <a href="https://wa.me/918089400009?text=Hi!%20I%20want%20to%20know%20about%20special%20offers%20at%20FIT%20CONNECT%20Gym" target="_blank" class="btn btn-wa" style="font-size:11px;padding:9px 16px">💬 WhatsApp for Offers</a>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -1049,7 +1065,176 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:50px 36
   </div>
 </footer>
 
+<!-- ══════════════ GYM GENIE CHATBOT ══════════════ -->
+<style>
+/* GENIE FLOATING BUTTON */
+#genie-fab{
+  position:fixed;bottom:28px;right:28px;z-index:9999;
+  width:68px;height:68px;border-radius:50%;border:none;cursor:grab;
+  background:radial-gradient(circle at 35% 35%,#ffe066,#f5a623 55%,#c47a00);
+  box-shadow:0 0 0 0 rgba(245,166,35,.6),0 6px 30px rgba(0,0,0,.5);
+  animation:genie-pulse 2.4s ease-in-out infinite;
+  display:flex;align-items:center;justify-content:center;
+  font-size:34px;transition:box-shadow .2s,transform .1s;
+  user-select:none;touch-action:none;
+}
+#genie-fab:hover{transform:scale(1.12) rotate(-8deg)}
+@keyframes genie-pulse{
+  0%,100%{box-shadow:0 0 0 0 rgba(245,166,35,.6),0 6px 30px rgba(0,0,0,.5)}
+  50%{box-shadow:0 0 0 14px rgba(245,166,35,.0),0 6px 30px rgba(0,0,0,.5)}
+}
+/* GENIE TOOLTIP */
+#genie-tip{
+  position:fixed;bottom:104px;right:30px;z-index:9998;
+  background:#ffe066;color:#3a2000;font-family:'Barlow Condensed',sans-serif;
+  font-weight:700;font-size:12px;letter-spacing:1px;padding:7px 13px;
+  border-radius:4px;white-space:nowrap;pointer-events:none;
+  box-shadow:0 4px 16px rgba(0,0,0,.4);
+  animation:tip-pop .4s ease both;
+}
+#genie-tip::after{content:'';position:absolute;bottom:-7px;right:22px;
+  border:7px solid transparent;border-top-color:#ffe066;border-bottom:0}
+@keyframes tip-pop{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+
+/* GENIE CHAT WINDOW */
+#genie-window{
+  position:fixed;bottom:110px;right:28px;z-index:9997;
+  width:370px;max-width:calc(100vw - 36px);
+  background:#0c110c;border:1px solid #27893b;border-radius:4px;
+  display:flex;flex-direction:column;overflow:hidden;
+  box-shadow:0 20px 60px rgba(0,0,0,.8),0 0 0 1px rgba(39,137,59,.3);
+  transform:scale(.85) translateY(30px);transform-origin:bottom right;
+  opacity:0;pointer-events:none;transition:transform .3s cubic-bezier(.34,1.56,.64,1),opacity .25s ease;
+}
+#genie-window.open{transform:scale(1) translateY(0);opacity:1;pointer-events:all}
+
+/* GENIE HEADER */
+#genie-header{
+  background:linear-gradient(135deg,#1e6b2e 0%,#27893b 100%);
+  padding:14px 16px;display:flex;align-items:center;gap:12px;position:relative;
+}
+.genie-avatar{font-size:32px;filter:drop-shadow(0 2px 6px rgba(0,0,0,.4))}
+.genie-head-text .genie-name{font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:2px;color:#fff;line-height:1}
+.genie-head-text .genie-status{font-family:'Barlow Condensed',sans-serif;font-size:11px;letter-spacing:2px;color:rgba(255,255,255,.7);text-transform:uppercase}
+#genie-close{position:absolute;right:12px;top:12px;background:rgba(0,0,0,.3);border:none;color:#fff;width:26px;height:26px;border-radius:50%;cursor:pointer;font-size:15px;display:flex;align-items:center;justify-content:center;transition:background .2s}
+#genie-close:hover{background:rgba(0,0,0,.6)}
+
+/* GENIE INTRO BANNER */
+#genie-intro{
+  background:linear-gradient(135deg,rgba(30,107,46,.15),rgba(5,8,5,.9));
+  border-bottom:1px solid rgba(39,137,59,.3);
+  padding:14px 16px;display:flex;align-items:flex-start;gap:10px;
+}
+.genie-lamp{font-size:22px}
+.genie-intro-text{font-family:'Barlow',sans-serif;font-size:13px;color:#c8e6c9;line-height:1.6}
+.genie-intro-text strong{color:#ffe066;font-family:'Barlow Condensed',sans-serif;font-size:15px;letter-spacing:1px}
+
+/* MESSAGES */
+#genie-msgs{
+  flex:1;overflow-y:auto;padding:14px;display:flex;flex-direction:column;gap:10px;
+  min-height:200px;max-height:340px;
+  scrollbar-width:thin;scrollbar-color:#27893b #0c110c;
+}
+#genie-msgs::-webkit-scrollbar{width:3px}
+#genie-msgs::-webkit-scrollbar-thumb{background:#27893b}
+.gm{display:flex;gap:8px;align-items:flex-end}
+.gm.user{flex-direction:row-reverse}
+.gm-bubble{
+  max-width:82%;padding:10px 13px;font-family:'Barlow',sans-serif;font-size:13px;line-height:1.6;
+  border-radius:4px;position:relative;
+}
+.gm.bot .gm-bubble{background:#121912;border:1px solid rgba(39,137,59,.35);color:#dce8dc;border-bottom-left-radius:0}
+.gm.user .gm-bubble{background:linear-gradient(135deg,#1e6b2e,#27893b);color:#fff;border-bottom-right-radius:0}
+.gm-avatar{font-size:20px;min-width:28px}
+/* typing dots */
+.genie-typing{display:flex;gap:5px;padding:12px 14px;align-items:center}
+.genie-typing span{width:7px;height:7px;background:#27893b;border-radius:50%;animation:gtype 1.2s ease-in-out infinite}
+.genie-typing span:nth-child(2){animation-delay:.2s}
+.genie-typing span:nth-child(3){animation-delay:.4s}
+@keyframes gtype{0%,80%,100%{transform:scale(.8);opacity:.5}40%{transform:scale(1.1);opacity:1}}
+
+/* QUICK CHIPS */
+#genie-chips{padding:10px 14px 4px;display:flex;flex-wrap:wrap;gap:6px}
+.g-chip{
+  background:rgba(30,107,46,.2);border:1px solid rgba(58,173,81,.4);
+  color:#3aad51;font-family:'Barlow Condensed',sans-serif;font-size:11px;
+  font-weight:700;letter-spacing:.5px;padding:5px 10px;border-radius:3px;
+  cursor:pointer;transition:all .15s;white-space:nowrap;
+}
+.g-chip:hover{background:rgba(30,107,46,.5);border-color:#3aad51;color:#fff}
+
+/* INPUT ROW */
+#genie-input-row{
+  padding:12px;display:flex;gap:8px;border-top:1px solid rgba(26,42,26,.8);
+  background:#080d08;
+}
+#genie-input{
+  flex:1;background:#121912;border:1px solid rgba(26,42,26,.8);
+  color:#f0ede8;font-family:'Barlow',sans-serif;font-size:13px;
+  padding:9px 12px;border-radius:3px;outline:none;resize:none;height:40px;
+  transition:border-color .2s;
+}
+#genie-input:focus{border-color:#3aad51}
+#genie-input::placeholder{color:#3a4a3a}
+#genie-send{
+  background:linear-gradient(135deg,#1e6b2e,#27893b);border:none;
+  color:#fff;padding:0 14px;border-radius:3px;cursor:pointer;font-size:18px;
+  display:flex;align-items:center;justify-content:center;transition:opacity .2s;
+}
+#genie-send:hover{opacity:.85}
+#genie-send:disabled{opacity:.4;cursor:not-allowed}
+/* FOOTER NOTE */
+#genie-footer{text-align:center;padding:6px;font-family:'Barlow',sans-serif;font-size:10px;color:#3a4a3a;background:#080d08;letter-spacing:.5px}
+
+/* SMOKE ANIMATION on open */
+@keyframes genie-appear{
+  0%{clip-path:ellipse(10% 5% at 50% 100%);opacity:0}
+  60%{clip-path:ellipse(60% 80% at 50% 60%);opacity:.8}
+  100%{clip-path:ellipse(100% 100% at 50% 50%);opacity:1}
+}
+</style>
+
+<!-- GENIE TOOLTIP -->
+<div id="genie-tip">🧞 Gym Genie – Free AI Guide!</div>
+
+<!-- GENIE FAB BUTTON -->
+<button id="genie-fab" onclick="toggleGenie()" title="Open Gym Genie">🧞</button>
+
+<!-- GENIE CHAT WINDOW -->
+<div id="genie-window">
+  <div id="genie-header">
+    <div class="genie-avatar">🧞</div>
+    <div class="genie-head-text">
+      <div class="genie-name">GYM GENIE</div>
+      <div class="genie-status">✦ Aapka Free AI Fitness Guide ✦</div>
+    </div>
+    <button id="genie-close" onclick="toggleGenie()">✕</button>
+  </div>
+  <div id="genie-intro">
+    <div class="genie-lamp">🪔</div>
+    <div class="genie-intro-text">
+      <strong>Aapka Swagat Hai, Maalik! 🙏</strong><br>
+      Main hoon aapka Gym Genie — diet, workout, weight loss, muscle gain sab mein aapki madad karunga. Bilkul FREE!
+    </div>
+  </div>
+  <div id="genie-msgs"></div>
+  <div id="genie-chips">
+    <div class="g-chip" onclick="chipAsk('Weight loss kaise karein?')">⚡ Weight Loss</div>
+    <div class="g-chip" onclick="chipAsk('Muscle gain diet plan')">💪 Muscle Gain</div>
+    <div class="g-chip" onclick="chipAsk('Beginner workout plan')">🏋️ Beginner Plan</div>
+    <div class="g-chip" onclick="chipAsk('Protein intake kya hona chahiye?')">🥚 Protein Tips</div>
+    <div class="g-chip" onclick="chipAsk('FIT CONNECT Gym membership fees kya hain?')">💰 Membership</div>
+    <div class="g-chip" onclick="chipAsk('Stretching aur warm-up kaise karein?')">🧘 Warm-Up</div>
+  </div>
+  <div id="genie-input-row">
+    <input id="genie-input" placeholder="Apna sawaal poochho, Maalik…" onkeydown="if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();sendGenie()}"/>
+    <button id="genie-send" onclick="sendGenie()">➤</button>
+  </div>
+  <div id="genie-footer">Powered by AI · FIT CONNECT Gym, Nadaun · Free for all members</div>
+</div>
+
 <script>
+/* ══ EXISTING SCRIPTS ══ */
 function toggleMenu(){document.getElementById('mobMenu').classList.toggle('open')}
 function showDay(day,btn){document.querySelectorAll('.day-btn').forEach(b=>b.classList.remove('on'));document.querySelectorAll('.day-panel').forEach(p=>p.classList.remove('on'));btn.classList.add('on');const p=document.getElementById('panel-'+day);if(p)p.classList.add('on')}
 function showDiet(id,btn){document.querySelectorAll('.dtab').forEach(b=>b.classList.remove('on'));document.querySelectorAll('.dpanel').forEach(p=>p.classList.remove('on'));if(btn)btn.classList.add('on');const p=document.getElementById('dp-'+id);if(p)p.classList.add('on')}
@@ -1057,6 +1242,206 @@ const obs=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isInters
 document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
 window.addEventListener('scroll',()=>{const n=document.getElementById('mainNav');n.style.boxShadow=window.scrollY>40?'0 4px 30px rgba(0,0,0,.6)':'none'});
 document.addEventListener('click',(e)=>{const m=document.getElementById('mobMenu');const h=document.querySelector('.hamburger');if(m&&!m.contains(e.target)&&!h.contains(e.target))m.classList.remove('open')});
+
+/* ══ GENIE FAB DRAG ══ */
+(function(){
+  const fab = document.getElementById('genie-fab');
+  let isDragging = false, hasDragged = false;
+  let startX, startY, startRight, startBottom;
+
+  function getPos(){
+    const rect = fab.getBoundingClientRect();
+    return {
+      right: window.innerWidth - rect.right,
+      bottom: window.innerHeight - rect.bottom
+    };
+  }
+
+  function onStart(e){
+    isDragging = true; hasDragged = false;
+    fab.style.animation = 'none';
+    fab.style.cursor = 'grabbing';
+    const pos = getPos();
+    startRight = pos.right; startBottom = pos.bottom;
+    const pt = e.touches ? e.touches[0] : e;
+    startX = pt.clientX; startY = pt.clientY;
+    document.addEventListener('mousemove', onMove);
+    document.addEventListener('mouseup', onEnd);
+    document.addEventListener('touchmove', onMove, {passive:false});
+    document.addEventListener('touchend', onEnd);
+    e.preventDefault();
+  }
+
+  function onMove(e){
+    if(!isDragging) return;
+    const pt = e.touches ? e.touches[0] : e;
+    const dx = pt.clientX - startX;
+    const dy = pt.clientY - startY;
+    if(Math.abs(dx) > 4 || Math.abs(dy) > 4) hasDragged = true;
+    let newRight = startRight - dx;
+    let newBottom = startBottom - dy;
+    // clamp within viewport
+    const fabSize = 68;
+    const margin = 8;
+    newRight  = Math.max(margin, Math.min(window.innerWidth  - fabSize - margin, newRight));
+    newBottom = Math.max(margin, Math.min(window.innerHeight - fabSize - margin, newBottom));
+    fab.style.right  = newRight  + 'px';
+    fab.style.bottom = newBottom + 'px';
+    fab.style.left   = 'auto';
+    fab.style.top    = 'auto';
+    // move genie window with fab if open
+    const win = document.getElementById('genie-window');
+    if(win && win.classList.contains('open')){
+      win.style.right  = (newRight + 4)  + 'px';
+      win.style.bottom = (newBottom + fabSize + 6) + 'px';
+    }
+    // move tip
+    const tip = document.getElementById('genie-tip');
+    if(tip){ tip.style.right = (newRight + 4) + 'px'; }
+    e.preventDefault();
+  }
+
+  function onEnd(){
+    isDragging = false;
+    fab.style.animation = 'genie-pulse 2.4s ease-in-out infinite';
+    fab.style.cursor = 'grab';
+    document.removeEventListener('mousemove', onMove);
+    document.removeEventListener('mouseup', onEnd);
+    document.removeEventListener('touchmove', onMove);
+    document.removeEventListener('touchend', onEnd);
+  }
+
+  fab.addEventListener('mousedown',  onStart);
+  fab.addEventListener('touchstart', onStart, {passive:false});
+
+  // Override click: only fire if not dragged
+  fab.addEventListener('click', function(e){
+    if(hasDragged){ hasDragged = false; e.stopImmediatePropagation(); }
+  }, true);
+})();
+
+
+let genieOpen = false;
+let genieHistory = [];
+let genieFirstOpen = true;
+let tipTimer;
+
+// Hide tip after 6s
+tipTimer = setTimeout(()=>{
+  const t=document.getElementById('genie-tip');
+  if(t){t.style.transition='opacity .5s';t.style.opacity='0';setTimeout(()=>t.remove(),600)}
+},6000);
+
+function toggleGenie(){
+  genieOpen = !genieOpen;
+  const win = document.getElementById('genie-window');
+  const tip = document.getElementById('genie-tip');
+  if(tip){tip.remove();clearTimeout(tipTimer)}
+  // Sync window position to fab's current position
+  const fab = document.getElementById('genie-fab');
+  const fabRight  = parseInt(fab.style.right)  || 28;
+  const fabBottom = parseInt(fab.style.bottom) || 28;
+  win.style.right  = (fabRight + 4)  + 'px';
+  win.style.bottom = (fabBottom + 74 + 6) + 'px';
+  win.classList.toggle('open', genieOpen);
+  if(genieOpen && genieFirstOpen){
+    genieFirstOpen = false;
+    setTimeout(()=>genieGreet(), 400);
+  }
+  if(genieOpen) document.getElementById('genie-input').focus();
+}
+
+function genieGreet(){
+  addGenieMsg("bot","🪔 <strong>Tell me your queries, mere Maalik!</strong><br>Main aapka personal gym guide hoon — workout, diet, weight loss, muscle gain — jo bhi poochho, hukum karo! 💪🧞");
+}
+
+function addGenieMsg(role, html){
+  const msgs = document.getElementById('genie-msgs');
+  const div = document.createElement('div');
+  div.className = 'gm ' + role;
+  const avatar = role === 'bot' ? '<div class="gm-avatar">🧞</div>' : '<div class="gm-avatar">👤</div>';
+  if(role==='bot'){
+    div.innerHTML = avatar + '<div class="gm-bubble">' + html + '</div>';
+  } else {
+    div.innerHTML = '<div class="gm-bubble">' + html + '</div>' + avatar;
+  }
+  msgs.appendChild(div);
+  msgs.scrollTop = msgs.scrollHeight;
+}
+
+function showTyping(){
+  const msgs = document.getElementById('genie-msgs');
+  const div = document.createElement('div');
+  div.className = 'gm bot'; div.id = 'genie-typing-indicator';
+  div.innerHTML = '<div class="gm-avatar">🧞</div><div class="gm-bubble genie-typing"><span></span><span></span><span></span></div>';
+  msgs.appendChild(div);
+  msgs.scrollTop = msgs.scrollHeight;
+}
+
+function hideTyping(){
+  const el = document.getElementById('genie-typing-indicator');
+  if(el) el.remove();
+}
+
+function chipAsk(q){ document.getElementById('genie-input').value=q; sendGenie(); }
+
+async function sendGenie(){
+  const inp = document.getElementById('genie-input');
+  const btn = document.getElementById('genie-send');
+  const text = inp.value.trim();
+  if(!text) return;
+
+  addGenieMsg('user', escHtml(text));
+  genieHistory.push({role:'user', content: text});
+  inp.value = '';
+  btn.disabled = true;
+  showTyping();
+
+  const SYSTEM = `Tu hai "Gym Genie" — FIT CONNECT Gym (Nadaun Chowk, Hamirpur, Himachal Pradesh) ka free AI fitness assistant. Trainer hain Anuj Thakur aur owner hain Anshuman Thakur (08089400009).
+Tu Hinglish mein baat karta hai (Hindi + English mix) — friendly, motivating, aur expert andaaz mein.
+Tu gym, workout, diet, nutrition, weight loss, muscle gain, supplements, recovery, stretching, beginner plans, advanced plans — sab pe expert advice deta hai.
+Jab koi gym membership pooche to bata: WhatsApp karo 08089400009 ya Nadaun Chowk aao.
+Har jawab ke end mein ek motivating line zaroor daal. Keep responses concise but helpful. Use emojis to make it engaging.`;
+
+  try {
+    const resp = await fetch('https://api.anthropic.com/v1/messages',{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({
+        model:'claude-sonnet-4-20250514',
+        max_tokens:800,
+        system: SYSTEM,
+        messages: genieHistory
+      })
+    });
+    const data = await resp.json();
+    hideTyping();
+    const reply = data.content && data.content[0] && data.content[0].text
+      ? data.content[0].text
+      : 'Maalik, abhi kuch technical dikkat hai. Thodi der baad try karein! 🧞';
+    genieHistory.push({role:'assistant', content: reply});
+    addGenieMsg('bot', formatGenieReply(reply));
+  } catch(err){
+    hideTyping();
+    addGenieMsg('bot','⚠️ Maalik, connection mein kuch dikkat aayi. Please thodi der baad try karein ya seedha call karein: <strong>08089400009</strong> 📞');
+  }
+  btn.disabled = false;
+  document.getElementById('genie-input').focus();
+}
+
+function formatGenieReply(text){
+  // Convert markdown-ish to HTML
+  return text
+    .replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>')
+    .replace(/\*(.+?)\*/g,'<em>$1</em>')
+    .replace(/\n\n/g,'<br><br>')
+    .replace(/\n/g,'<br>')
+    .replace(/^- (.+)/gm,'• $1');
+}
+
+function escHtml(t){
+  return t.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
 </script>
 </body>
 </html>
